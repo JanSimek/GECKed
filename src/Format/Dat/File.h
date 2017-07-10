@@ -53,6 +53,9 @@ public:
     std::string filename() const;
     File* setFilename(const std::string& filename);
 
+    // GECKed: FIXME: ...
+    std::unordered_map<std::string, Dat::Entry> list() { return _entries; }
+
     // an pointer to an entry with given name or nullptr if no such entry exists
     Entry* entry(const std::string& filename);
 

@@ -24,8 +24,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-    src\main.cpp \
-    src\mainwindow.cpp \
+    src/main.cpp \
+    src/mainwindow.cpp \
     src/Format/Dat/Entry.cpp \
     src/Format/Dat/File.cpp \
     src/Format/Dat/Item.cpp \
@@ -34,7 +34,7 @@ SOURCES += \
     src/Exception.cpp
 
 HEADERS += \
-    src\mainwindow.h \
+    src/mainwindow.h \
     src/Format/Dat/Entry.h \
     src/Format/Dat/File.h \
     src/Format/Dat/Item.h \
@@ -45,7 +45,7 @@ HEADERS += \
     src/Format/Enums.h
 
 FORMS += \
-    src\mainwindow.ui
+    src/mainwindow.ui
 
 unix: LIBS += -lzlib
 win32: LIBS += -L$$OUT_PWD/../zlib123dllx64/static_x64 -lzlibstat
